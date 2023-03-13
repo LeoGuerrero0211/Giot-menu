@@ -602,6 +602,7 @@ div#news-slider .owl-next {
   border-radius: 0px;
   padding-bottom: 10px;
   box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+  display: block;
 }
 
 #navbarResponsive{
