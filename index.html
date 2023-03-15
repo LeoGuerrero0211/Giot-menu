@@ -5,8 +5,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>giot menu</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Cemre Tellioğlu Tunçay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="only screen and (max-width: 768px)" href="style.css">
+       
 
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext" rel="stylesheet">
@@ -50,7 +51,7 @@
 <!--                                                                 <a style="padding-top:0px;" class="navbar-brand navBrandText text-uppercase font-weight-bold" href="index.html"><img src="img/logo/cemrebakerylogo.png" alt="restorant" /></a> -->
                                                                 
                                                             </div>
-                                                            <div class="col-md-9 col-sm-9 col-xs-9" style="width: 100px; height: 200pz;">
+                                                            <div class="col-md-9 col-sm-9 col-xs-9" style="width: 100px;">
                                                                 <a href="index.html"><img class="img-responsive logo" src="img/logo/logo1.png" alt="restorant" /></a>
                                                                 
                                                             </div>
@@ -113,27 +114,64 @@
                                                 <section class="contenido">
                                                     <div class="mostrador" id="mostrador">
                                                         <div class="fila">
-                                                            <div class="itemm">
+                                                            <div class="itemm" onclick="cargar(this)">
                                                                 <div class="contenedor-foto">
                                                                     <img src="img/logo/logo1.png" alt="">
-                                                                    <p class="descripcion"> CAFE 1</p>
-                                                                    <span class="precio"> $54</span>
-
                                                                 </div>
+                                                                <p class="descripcion">CAFE1</p>
+                                                                <span class="precio">$ 1.300</span>
                                                             </div>
-                                                            <div class="itemm">
+                                                            <div class="itemm" onclick="cargar(this)">
                                                                 <div class="contenedor-foto">
-                                                                    <img src="img/logo/Logo2.png" alt="">
-                                                                    <p class="descripcion"> CAFE 2</p>
-                                                                    <span class="precio"> $54</span>
-
+                                                                    <img src="img/logo/logo1.png" alt="">
                                                                 </div>
+                                                                <p class="descripcion" id>NIKE RUNNING TERRA </p>
+                                                                <span class="precio">$ 1.800</span>
                                                             </div>
-
+                                                            <div class="itemm" onclick="cargar(this)">
+                                                                <div class="contenedor-foto">
+                                                                    <img src="img/logo/logo1.png" alt="">
+                                                                </div>
+                                                                <p class="descripcion">NIKE WINFLO 8
+                                                                </p>
+                                                                <span class="precio">$ 3.600</span>
+                                                            </div>
+                                                            <div class="itemm" onclick="cargar(this)">
+                                                                <div class="contenedor-foto">
+                                                                    <img src="img/logo/logo1.png" alt="">
+                                                                </div>
+                                                                <p class="descripcion">NIKE LOW-TOP</p>
+                                                                <span class="precio">$ 1.800</span>
+                                                            </div>
                                                         </div>
-
+                                                        <div class="fila">
+                                                            <div class="itemm" onclick="cargar(this)">
+                                                                <div class="contenedor-foto">
+                                                                    <img src="img/logo/logo1.png" alt="">
+                                                                </div>
+                                                                <p class="descripcion">NIKE BLAZER 97</p>
+                                                                <span class="precio">$ 130</span>
+                                                            </div>                                                                                                                   
+                                                        </div> 
                                                     </div>
-
+                                                    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+                                                    <div class="seleccion" id="seleccion">
+                                                        <div class="cerrar" onclick="cerrar()">
+                                                            &#x2715
+                                                        </div>
+                                                        <div class="info">
+                                                            <img src="img/1.png" alt="" id="img">
+                                                            <h2 id="modelo">NIKE MODEL 1</h2>
+                                                            <p id="descripcion">Descripción Modelo 1</p>
+                                            
+                                                            <span class="precio" id="precio">$ 130</span>
+                                            
+                                                            <div class="fila">
+                                                                
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </section>
 
                                               
@@ -791,6 +829,7 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/scripst.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyIMWhs-crjT0yhctbRjfJFq75FlEhSzE&callback=initMap">
         </script>
